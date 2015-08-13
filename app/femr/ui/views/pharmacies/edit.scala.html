@@ -53,11 +53,16 @@
                             <button type="button" class="fButton fOtherButton replaceBtn">R</button>
                             <div>
                                 <span>@medication.getName</span>
+
+                            </div>
+                            <div id="dispensedWrap">
+                                <label><input type="checkbox" name="notDispensed" value="notDispensed"> Not dispensed</label>
                             </div>
                             <div>
                                 <span id="prescriber">
                                     Prescriber: @medication.getPrescriberLastName, @medication.getPrescriberFirstName</span>
-                            </div>
+                                </div>
+
                             <input type="text" class="hidden replacementMeds fInput" id="replacementMedication@x" name="replacementMedication@x" placeholder="Replacement"/>
                             <input type="text" class="hidden" name="id_prescription@x" value="@medication.getId"/>
                         </li>
